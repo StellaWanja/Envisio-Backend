@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\WANJA\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\WANJA\\.nuget\\packages"
+    ]
+  }
+}
