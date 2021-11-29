@@ -20,7 +20,11 @@ namespace envisio_backendv2
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    var port = Environment.GetEnvironmentVariable("PORT");
+
+                    //allow for heroku to use its own ports
+                    webBuilder.UseStartup<Startup>()
+                    .UseUrls("http://*:" + port);
                 });
     }
 }
